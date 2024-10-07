@@ -35,8 +35,8 @@ multiplicar();
 
 
 // 2.2 Escribe una función llamada `saludarPersonalizado` que reciba dos parámetros: `nombre` y `apellido`. La función debe devolver "Hola, [nombre] [apellido]".
-    function saludarPersonalizado(nombre, apellido){
-        return 'hola ${nombre} ${apellido}';
+   function saludarPersonalizado(nombre, apellido){
+        return 'hola ' + nombre + '' + apellido
     }
 saludarPersonalizado();
 
@@ -93,22 +93,22 @@ esPar()
 // function multiplicar(a, b) {
 //     return a * b;
 // }
-    const multiplicarFlecha = (a,b) => {
-         a * b
-    }
+    let multiplicarFlecha = (a,b) => {
+        return a * b
+}
 multiplicarFlecha();
 
 
 // 4.2 Crea una función flecha llamada `saludarFlecha` que reciba un parámetro `nombre` y devuelva "Hola [nombre]".
-    const saludarFlecha = (nombre) => {
-        'hola ${nombre}'
+    let saludarFlecha = (nombre) => {
+        return 'Hola ' + nombre
     }
 saludarFlecha();
 
 
 // 4.3 Escribe una función flecha llamada `calcularArea` que reciba el radio de un círculo y devuelva el área del círculo. Usa la fórmula A = π * r².
 const calcularArea = radio => {
-    3.14 * radio * radio
+   return 3.14 * radio * radio
 }
 calcularArea();
 
