@@ -72,7 +72,7 @@ multiplicarDOS();
 
 // 3.2 Escribe una **function expression** llamada `saludar` que acepte un parámetro `nombre` y devuelva "Hola, [nombre]".
     const saludar = function(nombre){
-        return 'hola ${nombre}';
+        return 'hola ' + nombre
     }
 saludar();
 
